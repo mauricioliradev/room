@@ -30,7 +30,17 @@ gem 'devise'
 gem 'pg', '~> 0.18.4'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
+gem 'bootstrap-sass'
+gem 'simple_form'
+gem 'faker'
+gem "font-awesome-rails"
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-fullcalendar'
+  gem 'rails-assets-momentjs'
+end
+
+gem 'ice_cube'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
