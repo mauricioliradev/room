@@ -1,0 +1,111 @@
+# encoding: UTF-8
+pt-BR:
+  errors:
+    messages:
+      expired: "Expirou, por favor conecte-se novamente."
+      already_confirmed: "já foi confirmado"
+      not_found: "não encontrado"
+      not_locked: "não foi bloqueado"
+      not_saved:
+        one: "1 erro proibe esta ação %{resource} de ser salva:"
+        other: "%{count} erros proibem esta ação %{resource} de ser salva:"
+  devise:
+    confirmations:
+      confirmed: "Sua conta foi confirmada com sucesso. Seja bem-vindo(a)!"
+      new:
+        resend_confirmation: "Reenviar instruções"
+      send_instructions: "Em poucos minutos, você receberá um e-mail com as instruções sobre como confirmar a sua conta."
+      send_paranoid_instructions: 'Se o seu e-mail existe em nosso banco de dados, você receberá um e-mail com instruções sobre como confirmar a sua conta em poucos minutos.'
+    failure:
+      general: "Falha no processo de autenticação"
+      already_authenticated: "Você já está conectado ao nosso sistema."
+      inactive: "Sua conta ainda não foi ativada."
+      invalid: "Nome de usuário ou senha inválidos."
+      invalid_token: "Token de autenticação inválido."
+      locked: "Sua conta está bloqueada."
+      timeout: "Sua sessão expirou; por favor, entre novamente para continuar."
+      unauthenticated: "Você precisa entrar ou se cadastrar antes de continuar."
+      unconfirmed: "Um email foi enviado, você deve confirmar a sua conta antes de continuar."
+      user:
+        not_found_in_database: "Usuário não encontrado na nossa base de dados."
+    sessions:
+      sign_in: "Conectar"
+      user:
+        signed_in: "Você entrou com sucesso."
+        signed_out: "Você saiu com sucesso."
+        already_signed_out: "Você já está conectado!"
+    passwords:
+      edit:
+        change_password: "Mudar minha senha"
+        new_password: "Nova Senha"
+        confirm_new_password: "Confirmação da nova Senha"
+      new:
+        forgot_password: "Esqueceu sua senha?"
+        no_account: "Não há nenhuma conta com este email. Se você aguarda por um convite, seja paciente: estamos trabalhando para enviá-lo o quanto antes."
+        send_password_instructions: "Envie-me instruções para redefinir minha senha."
+      send_instructions: "Você receberá em breve um e-mail com instruções sobre como redefinir sua senha."
+      updated: "Sua senha foi alterada com sucesso."
+      send_paranoid_instructions: "Se o seu e-mail existe em nosso banco de dados, você receberá um link de recuperação de senha em seu e-mail"
+    registrations:
+      new:
+        sign_up: "Cadastrar"
+      edit:
+        leave_password: "Deixe em branco caso não queira alterar a senha"
+        need: "precisamos da sua senha atual para confirmar suas alterações"
+      signed_up_but_unconfirmed: 'Uma mensagem com um link de confirmação foi enviado ao o seu e-mail. Por favor, abra o link para ativar sua conta.'
+      signed_up_but_inactive: 'Você conectou-se com sucesso. Porém, não podemos deixar você entrar porque sua conta ainda não está aticada.'
+      signed_up_but_locked: 'Você conectou-se com sucesso. Porém, não podemos deixar você entrar porque sua conta está bloqueada.'
+      signed_up_but_reason: 'Você conectou-se com sucesso. Porém, não podemos deixar você entrar porque sua conta está %{reason}.'
+      destroyed: "Sua conta foi cancelada com sucesso. Esperamos vê-lo novamente em breve."
+      signed_up: "Você se inscreveu com êxito. Se habilitado, a confirmação foi enviada para seu e-mail."
+      updated: "Você atualizou a sua conta com sucesso."
+    unlocks:
+      new:
+        resend_unlock: "Reenviar instruções de desbloqueio"
+      send_instructions: "Você receberá em breve um e-mail com as instruções sobre como desbloquear a sua conta."
+      unlocked: "Sua conta foi desbloqueada com sucesso. Seja bem-vindo!"
+      send_paranoid_instructions: "Se a sua conta existe, você receberá um e-mail com instruções sobre como desbloqueá-lo em poucos minutos."
+    omniauth_callbacks:
+      sign_in: "Conectar-se com %{provider}"
+      success: "Autorizado com êxito a partir da conta %{kind}"
+      failure: "Não foi possível autorizá-lo a partir de %{kind} porque '%{reason}'."
+    invitations:
+      invitation_token_invalid: "Seu convite é inválido!"
+      send_instructions: "Seu convite foi enviado."
+      updated: "Sua senha foi definida com sucesso. Seja bem-vindo(a)!"
+    mailer:
+      hello: "Olá %{email}!"
+      confirmation_instructions:
+        confirm: "Confirmar minha conta"
+        subject: "Instruções para confirmação"
+        you_can_confirm: "Você pode confirmar a sua conta em zerokol.com através do link abaixo:"
+      reset_password_instructions:
+        subject: "Instruções para redefinir senha"
+        change: "Alterar minha senha"
+        ignore: "Se você não fez esta solicitação, por favor ignore este email."
+        someone_requested: "Recebemos um pedido para alterar a sua senha, e você pode fazer isso através do link abaixo."
+        wont_change: "Sua senha permanecerá a mesma até que você acesse o link acima e a altere."
+      unlock_instructions:
+        subject: "Instruções para Desbloquear"
+        account_locked: "Sua conta foi bloqueada devido a uma quantidade excessiva de tentativas de entrar."
+        click_to_unlock: "Clique no link abaixo para desbloquear a sua conta:"
+        unlock: "Desbloquear minha conta"
+      invitation_instructions:
+        accept: "Aceitar convite"
+      inviter:
+        accept_at: "em %{url}, você pode aceitar através do link abaixo."
+        have_invited_you: "%{names} convidou você para participar em zerokol.com"
+      welcome: "Bem-vindo(a) %{email}!"
+    shared:
+      links:
+        forgot_your_password: "Esqueceu sua senha?"
+        receive_confirmation: "Não recebeu instruções de confirmação?"
+        receive_unlock: "Não recebeu instruções de desbloqueio?"
+        sign_in: "Entrar"
+        sign_up: "Cadastre-se"
+        sign_up_closed: "Registros estão encerrados no momento."
+      mail_signup_form:
+        sign_up_for_an_invite: "Registre-se para receber um convite!"
+    cancel:
+      account: "Cancelar minha conta"
+      unhappy: "Desanimado?"
