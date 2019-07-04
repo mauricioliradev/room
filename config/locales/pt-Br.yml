@@ -1,0 +1,6 @@
+pt-BR:
+  helpers:
+    submit:
+      event:
+        create: "Criar Reserva"
+        update: "Confirmar Alterações"

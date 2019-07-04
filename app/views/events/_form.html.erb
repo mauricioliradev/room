@@ -1,0 +1,21 @@
+<%= simple_form_for @event, remote: true do |f| %>
+  <div class="form-inputs">
+    <%= f.label :description, "Descrição" %>
+    <%= f.text_area(:description, size: '65x4') %>
+    <%= f.hidden_field :user_id, as: :hidden, value: current_user.id %>
+    <%= f.hidden_field :start, as: :hidden, value: Date.today, class: 'form-control input-sm start_hidden' %>
+    <%= f.hidden_field :end, as: :hidden, value: Date.today, class: 'form-control input-sm end_hidden' %>
+    <%= f.input :color, as: :select, collection: [['Black','black'], ['Green','green'], ['Red','red']] %>
+  </div>
+
+  <div class="form-actions">
+  <%= f.button :submit, class: 'btn btn-success' %>
+  <%= link_to 'Cancelar Reserva', 
+              event, 
+              method: :delete, 
+              class: 'btn btn-danger', 
+              data: { confirm: 'Você tem certeza?' }, 
+              remote: true unless @event.new_record? %>
+  <button type="button" class="btn btn-defult" data-dismiss="modal">Descartar Alterações</button>
+  </div>
+<% end %>

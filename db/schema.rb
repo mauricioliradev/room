@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 2019_07_03_033432) do
 
   create_table "events", force: :cascade do |t|
     t.text "description"
-    t.date "start"
-    t.date "end"
+    t.datetime "start"
+    t.datetime "end"
     t.string "color"
     t.bigint "user_id"
     t.datetime "created_at", null: false
