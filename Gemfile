@@ -61,6 +61,11 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+group :development, :test do
+  gem 'rspec-rails', '~> 3.8'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'factory_bot_rails', '~> 4.0'
+end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver

@@ -30,6 +30,8 @@ user_04 = User.create!(
   password: '123456789',
   name: 'Clark Kent'
 )
+
+puts '##### RESERVAS'
 event_01 =  Event.create!(
   user_id: 2,
   description: Faker::Book.title,

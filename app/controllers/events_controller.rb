@@ -16,8 +16,12 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.new(event_params)
-    @event.save
+    if event_params[:start].to_time < Time.now
+      render json: @events.errors, status: :unprocessable_entity
+    else
+      @event = Event.new(event_params)
+      @event.save
+    end
   end
 
   def update
