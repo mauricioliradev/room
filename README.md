@@ -1,13 +1,13 @@
 ##  Sala de Reunião
 
 #### Sistema em Ruby on Rails para controlar as reservas de uma sala de reunião.
-
+        
 - - - 
 
 ## INSTALAÇÃO
 
 Clone o repositório em seu computador, instale as gems do projeto, crie a database e inicie o servidor Rails, como mostrado abaixo.
-
+    
     git clone https://github.com/mauricioliradev/room.git
 
     cd room
@@ -21,3 +21,7 @@ Sample Data (SEED)
 Para gerar as seeds reproduza o seguinte comando na pasta do projeto:
 
     rails db:seed
+
+Link da aplicação no heroku:
+
+    https://roomreservationapp.herokuapp.com/
