@@ -1,24 +1,23 @@
-# README
+##  Sala de Reunião
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Sistema em Ruby on Rails para controlar as reservas de uma sala de reunião.
 
-Things you may want to cover:
+- - - 
 
-* Ruby version
+## INSTALAÇÃO
 
-* System dependencies
+Clone o repositório em seu computador, instale as gems do projeto, crie a database e inicie o servidor Rails, como mostrado abaixo.
 
-* Configuration
+    git clone https://github.com/mauricioliradev/room.git
 
-* Database creation
+    cd room
 
-* Database initialization
+    bundle
 
-* How to run the test suite
+    rails db:create && rails db:migrate
+    rails s
 
-* Services (job queues, cache servers, search engines, etc.)
+Sample Data (SEED)
+Para gerar as seeds reproduza o seguinte comando na pasta do projeto:
 
-* Deployment instructions
-
-* ...
+    rails db:seed
