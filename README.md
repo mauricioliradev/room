@@ -22,6 +22,11 @@ Para gerar as seeds reproduza o seguinte comando na pasta do projeto:
 
     rails db:seed
 
+TESTES
+Para rodar os testes do *rspec* use:
+
+   bundle exec rspec
+   
 Link da aplicação no heroku:
 
     https://roomreservationapp.herokuapp.com/

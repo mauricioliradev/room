@@ -1,6 +1,6 @@
 <%= simple_form_for @event, remote: true do |f| %>
   <div class="form-inputs">
-    <%= f.label :description, "Descrição" %>
+    <%= f.label :description, "Descrição" %><br>
     <%= f.text_area(:description, size: '65x4') %>
     <%= f.hidden_field :user_id, as: :hidden, value: current_user.id %>
     <%= f.hidden_field :start, as: :hidden, value: Date.today, class: 'form-control input-sm start_hidden' %>

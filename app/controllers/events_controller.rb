@@ -16,7 +16,7 @@ class EventsController < ApplicationController
   end
 
   def create
-    if event_params[:start].to_time < Time.now
+    if event_params[:start].to_time < Time.now - (3 * 60 * 60)
       render json: @events.errors, status: :unprocessable_entity
     else
       @event = Event.new(event_params)

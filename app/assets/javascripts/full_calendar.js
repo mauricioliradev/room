@@ -47,7 +47,7 @@ initialize_calendar = function() {
 
         if (moment(date).format("MM/DD/YYYY HH:mm") < moment(myDate).format("MM/DD/YYYY HH:mm") ) {
           //TRUE Clicked date smaller than today + daysToadd
-          alert("Não é possivel criar reservas enfiores a data atual!");
+          alert("Não é possivel criar reservas em data inferior a data atual!");
         }
             
       },
@@ -80,7 +80,7 @@ initialize_calendar = function() {
 
         if (moment(event.start).format("MM/DD/YYYY HH:mm") < moment(myDate).format("MM/DD/YYYY HH:mm") ) {
           //TRUE Clicked date smaller than today + daysToadd
-          alert("Não é possivel alterar reservas enfiores a data atual!");
+          alert("Não é possivel alterar reservas em data inferior a data atual!");
         } else {          
           var currentUser = $('span#initial-vars').data().currentUser.id;
           if (event.user == currentUser ) {
